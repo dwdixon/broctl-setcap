@@ -6,10 +6,12 @@
 #    The plugin is off by default. To enable it, add "setcap.enabled=1" to broctl.cfg.
 #
 # Dave Crawford (@pingtrip)
+#
+# Forked and modified by Drew Dixon for Bro -> Zeek name change compatibility etc.
 
-import BroControl.plugin
+import ZeekControl.plugin
 
-class setcap(BroControl.plugin.Plugin):
+class setcap(ZeekControl.plugin.Plugin):
     def __init__(self):
         super(setcap, self).__init__(apiversion=1)
 
